@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="GameApp" lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Juego">
+	<meta name="author" content="Animus">
+
+	<!-- styles -->
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- libs  -->
+	<script src="lib/angular.min.js" charset="utf-8"></script>
+
+	<!-- node.js webserver -->
+	<script src="js/GameServer.js" charset="utf-8"></script>
+
+	<!-- front-end controllers  -->
+	<script src="js/Songs.js" charset="utf-8"></script>
+	<script src="js/GameAppInitializer.js" charset="utf-8"></script>
+	<script src="js/GameController.js" charset="utf-8"></script>
+	<script src="js/FruitService.js" charset="utf-8"></script>
+	<script src="js/NotificationsService.js" charset="utf-8"></script>
+	<script src="js/Watchdog.js" charset="utf-8"></script>
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<title>Sonidos saludables</title>
+</head>
+
+<body ng-controller="GameMechanicsController as mechanics">
+	<div id="main">
+
+		<div id="splash"></div>
+		<div id="game_finished"><div id="game_finished_text"></div></div>
+		<div id="game_counter"><div id="game_counter_text"></div></div>
+
+		<header class="">
+			<div class="instruments">
+				<a href="#" id="instrumentIcon1" class="instrument01">
+					<strong></strong>
+					<span class="animated wobble"></span>
+				</a>
+				<a href="#" id="instrumentIcon2" class="instrument02">
+					<strong></strong>
+					<span class="animated wobble"></span>
+				</a>
+				<a href="#" id="instrumentIcon3" class="instrument03">
+					<strong></strong>
+					<span class="animated wobble"></span>
+				</a>
+				<a href="#" id="instrumentIcon4" class="instrument04">
+					<strong></strong>
+					<span class="animated wobble"></span>
+				</a>
+			</div>
+			<div class="songs">
+				<a href="#" class="song">
+					<span class="animated wobble"></span>
+					<div class="song_text">
+						<h1 id="songName"></h1>
+						<h2 id="songAuthor">Author:</h2>
+					</div>
+				</a>
+			</div>
+		</header>
+
+		<div id="gamePlayContainer">
+			<div id="threashold">
+				<div class="col-note">DO</div>
+				<div class="col-note">RE</div>
+				<div class="col-note">MI</div>
+				<div class="col-note">FA</div>
+				<div class="col-note">SOL</div>
+				<div class="col-note">LA</div>
+				<div class="col-note">SI</div>
+			</div>
+			<div id="song"></div>
+		</div>
+
+		<footer class="animated slideInUp">
+			<div class="messaje">
+				<span id="feedbackText">
+					<strong>Start</strong>
+				</span>
+				<div class="sub_score">
+					<!-- clases = worst, bad, normal, good, excellent -->
+					<span id="pointsCounter" class="animated number excellent">0</span>
+					Puntos
+				</div>
+			</div>
+
+			<div class="score">
+				<div id="totalPoints" class="total">0</div>
+				Puntos totales
+			</div>
+			<div class="logo">
+				<span></span>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+//
+// general STYLES
+// --------------------------------------------------
+
+body{
+	margin: 0;
+	padding: 0;
+	color: @textColor;
+	background-color: @bodyBackground;
+	font-family: @font;
+	font-weight: 300;
+}
+
+.box{
+	width: @box;
+	margin: 0 auto;
+	position: relative;
+}
+.clearfix {
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	clear: both;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+a{
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a, a:hover, a:active, a:focus{
+   outline: 0;
+}
+img{
+	max-width: 100%;
+	max-height: 100% !important;
+	height: auto !important;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+//
+// FONTS
+// --------------------------------------------------
+
+
+
+
+//
+// STYLES
+// --------------------------------------------------
+body{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+#main{
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	background: url(../images/bg_main.jpg) 0 0 no-repeat #e2e9a1;
+	header{
+		-webkit-animation-duration: 0.5s;
+			-moz-animation-duration: 0.5s;
+		background: url(../images/bg_header.png) 0 0 no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 190px;
+		width: 100%;
+		z-index: 1000;
+		.instruments{
+			.instrument01{
+				position: absolute;
+				left: 60px;
+				top: 0;
+				height: 310px;
+				width: 240px;
+				strong{
+					margin: 10px 0 0;
+					display: block;
+					background: url(../images/icon_instrument01.png) 0 0 no-repeat;
+					width: 100%;
+					height: 109px;
+				}
+				span{
+					display: block;
+					background: url(../images/icon_kitchen_01.png) top center no-repeat;
+					width: 100%;
+					height: 175px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.instrument02{
+				position: absolute;
+				left: 360px;
+				top: 0;
+				height: 310px;
+				width: 179px;
+				strong{
+					margin: 15px 0 0;
+					display: block;
+					background: url(../images/icon_instrument02.png) 0 0 no-repeat;
+					width: 100%;
+					height: 95px;
+				}
+				span{
+					display: block;
+					background: url(../images/icon_kitchen_02.png) top center no-repeat;
+					width: 100%;
+					height: 175px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.instrument03{
+				position: absolute;
+				left: 600px;
+				top: 0;
+				height: 310px;
+				width: 225px;
+				strong{
+					margin: 12px 0 0;
+					display: block;
+					background: url(../images/icon_instrument03.png) 0 0 no-repeat;
+					width: 100%;
+					height: 107px;
+				}
+				span{
+					display: block;
+					background: url(../images/icon_kitchen_03.png) top center no-repeat;
+					width: 100%;
+					height: 175px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.instrument04{
+				position: absolute;
+				left: 885px;
+				top: 0;
+				height: 310px;
+				width: 250px;
+				strong{
+					margin: 27px 0 0;
+					display: block;
+					background: url(../images/icon_instrument04.png) 0 0 no-repeat;
+					width: 100%;
+					height: 80px;
+				}
+				span{
+					display: block;
+					background: url(../images/icon_kitchen_04.png) top center no-repeat;
+					width: 100%;
+					height: 175px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.active, a:hover{
+				strong{
+					background-position: bottom left !important;
+				}
+			}
+		}
+		.songs{
+			position: absolute;
+			height: 285px;
+			width: 715px;
+			right: 0;
+			top: 0;
+			background: url(../images/blackboard.png) bottom left no-repeat;
+			.song{
+				text-decoration: none;
+			}
+			span{
+				display: block;
+				background: url(../images/icon_kitchen_05.png) top center no-repeat;
+				width: 119px;
+				height: 75px;
+				margin: 35px 0 0;
+			}
+			.song_text{
+				background: url(../images/arrows.png) no-repeat;
+				margin: 45px 55px 0;
+				line-height: 30px;
+				h1{
+					padding: 0 0 0 60px;
+					margin: 0;
+					color: #d5da1e;
+					font-size: 20px;
+					font-weight: normal;
+				}
+				h2{
+					padding: 0 0 0 60px;
+					margin: 0;
+					color: @white;
+					font-size: 16px;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+	#song{
+		margin: 155px 0 0;
+		height: 802px;
+		position: relative;
+		.line{
+			width: 42px;
+			height: 802px;
+			position: absolute;
+			top: 0;
+			left: 200px;
+			z-index: 0;
+			background: url(../images/line.png) top center no-repeat;
+		}
+		.notes{
+			margin:195px 0 0;
+			position: relative;
+			width: 100%;
+			float: left;
+		}
+		.apple{
+			background-color: #ff0000 !important;
+			span{
+				background: url(../images/icon_apple.png);
+			}
+		}
+		.green_apple{
+			background-color: #aae148 !important;
+			span{
+				background: url(../images/icon_green_apple.png);
+			}
+		}
+		.orange{
+			background-color: #ff6600 !important;
+			span{
+				background: url(../images/icon_orange.png);
+			}
+		}
+		.carrot{
+			background-color: #d4541a !important;
+			span{
+				background: url(../images/icon_carrot.png);
+			}
+		}
+		.pear{
+			background-color: #d5da1e !important;
+			span{
+				background: url(../images/icon_pear.png);
+			}
+		}
+		.eggplant{
+			background-color: #6f2549 !important;
+			span{
+				background: url(../images/icon_bere.png);
+			}
+		}
+		.zucchini{
+			background-color: #0e9523 !important;
+			span{
+				background: url(../images/icon_zapa.png);
+			}
+		}
+		.note{
+			background: url(../images/icon_music.png) center 160px no-repeat @black;
+			width: 220px;
+			height: 220px;
+			position: absolute;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			-webkit-box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.2);
+			-moz-box-shadow:    11px 11px 15px 0px rgba(50, 50, 50, 0.2);
+			box-shadow:         11px 11px 15px 0px rgba(50, 50, 50, 0.2);
+			z-index: 100;
+			span{
+				width: 100%;
+				height: 155px;
+				display: block;
+				background-repeat: no-repeat;
+				background-position: bottom center;
+			}
+		}
+		.pos01{
+			top: 0;
+		}
+		.pos02{
+			top: 225px;
+		}
+	}
+	footer{
+		z-index: 1000;
+		background: url(../images/bg_footer.png) bottom left no-repeat;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 183px;
+		width: 100%;
+		.logo{
+			-webkit-animation-duration: 6s;
+			-moz-animation-duration: 6s;
+			position: absolute;
+			bottom: -150px;
+			left: 50%;
+			width: 340px;
+			height: 343px;
+			margin: 0 0 0 -170px;
+			background: url(../images/bg_logo.png) top center no-repeat;
+			span{
+				display: block;
+				width: 100%;
+				height: 119px;
+				background: url(../images/logo.png) center no-repeat;
+				margin: 60px 0 0;
+			}
+		}
+		.messaje{
+			margin: 100px 0 0 230px;
+			padding: 0 40px;
+			height: 60px;
+			width: 560px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+			background-color: #3f0000;
+			float: left;
+			color: #ffecd6;
+			font-size: 24px;
+			line-height: 60px;
+			text-transform: uppercase;
+			.sub_score{
+				float: right;
+				line-height: 44px;
+				padding: 8px 0;
+				font-size: 12px;
+				span{
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					border-radius: 50%;
+					display: inline-block;
+					height: 44px;
+					width: 44px;
+					text-align: center;
+				}
+				.worst{
+					background-color: #ff0000;
+				}
+				.bad{
+					background-color: #ff7e00;
+				}
+				.normal{
+					background-color: #ad9e21;
+				}
+				.good{
+					background-color: #21ad7a;
+				}
+				.excellent{
+					background-color: #3ca021;
+				}
+			}	
+		}
+		.score{
+			margin: 100px 260px 0 0;
+			height: 60px;
+			width: 520px;
+			float: right;
+			line-height: 60px;
+			text-transform: uppercase;
+			color: #3f0000;
+			background-color: #dfbe9f;
+			font-size: 18px;
+			padding-right: 30px;
+			-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+			.total{
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				background-color: #3f0000;
+				padding: 0 40px;
+				margin: 0 30px 0 0;
+				display: inline-block;
+				float: left;
+				font-size: 24px;
+				color: #ffecd6;
+			}
+		}
+	}
+}
