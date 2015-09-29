@@ -28,17 +28,17 @@
      * Creates a new div .note and appends it
      * to the #song element
      */
-    var createFruit = function(i, tone, time) {
+    var createFruit = function(i, tone, img, time) {
       var span = document.createElement('span');
-      var p = document.createElement('p');
+      // var p = document.createElement('p');
       var elem = document.createElement('div');
 
-      p.innerHTML = tone;
+      // p.innerHTML = tone;
       elem.id = 'fruit' + i;
-      elem.className = 'animated-fruit note ' + FRUITS[tone] + ' col-' + tone.replace('#', 'Sharp');
+      elem.className = 'animated-fruit note ' + FRUITS[img] + ' col-' + tone.replace('#', 'Sharp');
 
       elem.appendChild(span);
-      elem.appendChild(p);
+      // elem.appendChild(p);
       document.getElementById('song').appendChild(elem);
 
       return {

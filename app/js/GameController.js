@@ -15,8 +15,18 @@
     var delay = 500;
     var index = 0;
     var createFruit = function(key){
-      var fruit = FruitService.createFruit( index++, TONES[key],  delay );
+
+      var tone = TONES[Math.floor(Math.random() * 11)];
+      var fruit = FruitService.createFruit( index++, TONES[key], tone, delay );
       FruitService.animateFruit(fruit, fruitAnimationEnds);
+
+      document.getElementById('note-' + key).classList.add('active');
+      document.getElementById('note-' + key).classList.add('bounce');
+      setTimeout(function () {
+        document.getElementById('note-' + key).classList.remove('active');
+        document.getElementById('note-' + key).classList.remove('bounce');
+      }, 700);
+
     }
 
     var animateFruit = function(fruit){
