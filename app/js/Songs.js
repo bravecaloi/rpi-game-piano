@@ -37,14 +37,19 @@ SONGS = [
   }
 ];
 
-TONES = ['DO','RE','MI','FA','SOL','LA','SI'];
+TONES = ['DO','DO#', 'RE', 'RE#', 'MI','FA', 'FA#', 'SOL', 'SOL#', 'LA', 'LA#', 'SI'];
 
 FRUITS = {
   'DO': 'apple',
+  'DO#': 'apple',
   'RE': 'orange',
+  'RE#': 'orange',
   'MI': 'green_apple',
   'FA': 'peach',
+  'FA#': 'peach',
   'SOL': 'pear',
+  'SOL#': 'pear',
   'LA': 'lemon',
+  'LA#': 'lemon',
   'SI': 'zapallito'
 };

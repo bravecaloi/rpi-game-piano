@@ -215,7 +215,6 @@ body {
 #main header .instruments .instrument01 strong {
   margin: 10px 0 0;
   display: block;
-  background: url(../images/icon_instrument01.png) 0 0 no-repeat;
   width: 100%;
   height: 109px
 }
@@ -238,7 +237,6 @@ body {
 #main header .instruments .instrument02 strong {
   margin: 15px 0 0;
   display: block;
-  background: url(../images/icon_instrument02.png) 0 0 no-repeat;
   width: 100%;
   height: 95px
 }
@@ -261,7 +259,6 @@ body {
 #main header .instruments .instrument03 strong {
   margin: 12px 0 0;
   display: block;
-  background: url(../images/icon_instrument03.png) 0 0 no-repeat;
   width: 100%;
   height: 107px
 }
@@ -306,7 +303,6 @@ body {
   width: 715px;
   right: 0;
   top: 0;
-  background: url(../images/blackboard.png) bottom left no-repeat
 }
 #main header .songs .song {
   text-decoration: none
@@ -339,8 +335,8 @@ body {
 }
 
 #main #gamePlayContainer{
-  width: 60%;
-  margin-left: 20%;
+  width: 90%;
+  margin-left: 5%;
   position: absolute;
   border: 10px double rgba(228, 102, 31, 0.7);
 }
@@ -366,7 +362,7 @@ body {
 
 #threashold .col-note{
   float: left;
-  width: 14%;
+  width: 8%;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -376,27 +372,42 @@ body {
 #main #song .col-DO {
   left: 0%;
 }
+#main #song .col-DOSharp {
+  left: 8%;
+}
 #main #song .col-RE {
-  left: 14%;
+  left: 16%;
+}
+#main #song .col-RESharp {
+  left: 24%;
 }
 #main #song .col-MI {
-  left: 28%;
+  left: 32%;
 }
 #main #song .col-FA {
-  left: 42%;
+  left: 40%;
+}
+#main #song .col-FASharp {
+  left: 48%;
 }
 #main #song .col-SOL {
   left: 56%;
 }
+#main #song .col-SOLSharp {
+  left: 64%;
+}
 #main #song .col-LA {
-  left: 70%;
+  left: 72%;
+}
+#main #song .col-LASharp {
+  left: 80%;
 }
 #main #song .col-SI {
-  left: 84%;
+  left: 88%;
 }
 
 #main #song .note {
-  width: 14%;
+  width: 8%;
   height: 220px;
   position: absolute;
 }
