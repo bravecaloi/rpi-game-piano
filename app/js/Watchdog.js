@@ -8,12 +8,13 @@
     var showSplash = function(){
       document.getElementById('splash').style['display'] = 'block';
       global.isSplash = true;
+      global.MusicService.fadeOut();
     }
 
     var hideSplash = function(){
       document.getElementById('splash').style['display'] = 'none';
       global.isSplash = false;
-      // global.GameController.startSong();
+      global.MusicService.fadeIn();
     }
 
     var startWatchdog = function() {

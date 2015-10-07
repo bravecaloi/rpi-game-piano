@@ -3,7 +3,7 @@
 
   var app = angular.module(GAME_APP_NAME);
 
-  app.controller('GameMechanicsController', function($scope, $timeout, FruitService, NotificationsService) {
+  app.controller('GameMechanicsController', function($scope, $timeout, $interval, FruitService, NotificationsService, MusicService) {
     var ctrl = this;
 
 
